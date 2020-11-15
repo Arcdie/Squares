@@ -56,7 +56,7 @@ $(document)
         $(container).css('background', `url('./images/fields/${containers[i]}')`);
       } else $emptyField = $(container);
     });
-  },
+  })
   .on('click', 'div.playing-field div', function () {
     const indexChoosed = $(this).index();
     const indexEmpty = $emptyField.index();
